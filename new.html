@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Counter</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.counter {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.count-display {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.saved-counts {
+  margin-top: 30px;
+}
+
+.saved-counts h2 {
+  margin-bottom: 10px;
+}
+
+.saved-counts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.saved-counts li {
+  margin-bottom: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="counter">
+    <h1>People Counter</h1>
+    <div class="count-display">
+      <span id="count">0</span>
+    </div>
+    <button id="increaseBtn">Increase</button>
+    <button id="saveBtn">Save</button>
+    <button id="resetBtn">Reset</button>
+    <div class="saved-counts">
+      <h2>Saved Counts</h2>
+      <ul id="savedCountsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
